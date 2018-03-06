@@ -1,14 +1,70 @@
 xlabeling:
   mt:
     m_vis:
-      label: visable mass /GeV
+      label: Visible di-#tau mass / GeV
     pt_1:
-      label: Muon p_t /GeV
+      label: Muon p_{T} / GeV
     pt_2:
-      label: Tau p_t /GeV
-  mm:
+      label: Tau p_{T} / GeV
+    jpt_1:
+      label: Leading Jet p_{T} / GeV
+    jpt_2:
+      label: Trailing Jet p_{T} / GeV
+    jphi_1:
+      label: Leading Jet #phi
+    jphi_2:
+      label: Trailing Jet #phi
+    njets:
+      label: Number of Jets
+    nbtag:
+      label: Number of b-tagged Jets
+    mt_1:
+      label: Transverse Mass m_{T} (#mu, #slash{E}_{T}) / GeV
+    mt_2:
+      label: Transverse Mass m_{T} (#tau, #slash{E}_{T}) / GeV
+    ptvis:
+      label: Visable p_{T} / GeV
+    pt_tt:
+      label: p_{T}(#tau#tau) / GeV
+    mjj:
+      label: Di-jet Mass m_{jj} / GeV
+    dijetpt:
+      label: Di-jet p_{T} / GeV
+    met:
+      label: Missing transversal Energy / GeV 
+  et:
     m_vis:
-      label: m_{vis}
+      label: Visible di-#tau mass / GeV
+    pt_1:
+      label: Electron p_{T} / GeV
+    pt_2:
+      label: Tau p_{T} / GeV
+    jpt_1:
+      label: Leading Jet p_{T} / GeV
+    jpt_2:
+      label: Trailing Jet p_{T} / GeV
+    jphi_1:
+      label: Leading Jet #phi
+    jphi_2:
+      label: Trailing Jet #phi
+    njets:
+      label: Number of Jets
+    nbtag:
+      label: Number of b-tagged Jets
+    mt_1:
+      label: Transverse Mass m_{T} (#mu, #slash{E}_{T}) / GeV
+    mt_2:
+      label: Transverse Mass m_{T} (#tau, #slash{E}_{T}) / GeV
+    ptvis:
+      label: Visable p_{T} / GeV
+    pt_tt:
+      label: p_{T}(#tau#tau) / GeV
+    mjj:
+      label: Di-jet Mass m_{jj} / GeV
+    dijetpt:
+      label: Di-jet p_{T} / GeV
+    met:
+      label: Missing transversal Energy / GeV 
 
 legend_label:
     HTT: H#rightarrow#tau#tau
