@@ -10,17 +10,18 @@ style_path = 'Dumbledraw/Dumbledraw/style.yaml'
 def CreateTransparentColor(color, alpha):
     adapt = R.gROOT.GetColor(color)
     new_idx = R.gROOT.GetListOfColors().GetLast() + 1
-    trans = R.TColor(new_idx,
-                     adapt.GetRed(),
-                     adapt.GetGreen(), adapt.GetBlue(), '', alpha)
+    trans = R.TColor(new_idx, adapt.GetRed(), adapt.GetGreen(),
+                     adapt.GetBlue(), '', alpha)
     COL_STORE.append(trans)
     trans.SetName('userColor%i' % new_idx)
     return new_idx
+
 
 label_dict = yaml.load(open(style_path))['legend_label']
 color_dict = {}
 for key, value in yaml.load(open(style_path))['color_dict'].items():
     color_dict[key] = eval(value)
+
 
 def SetStyle(name, **kwargs):
     styles = {"none": none, "TDR": SetTDRStyle, "ModTDR": ModTDRStyle}
