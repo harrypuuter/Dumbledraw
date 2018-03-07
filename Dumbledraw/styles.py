@@ -4,7 +4,7 @@ import yaml
 logger = logging.getLogger(__name__)
 
 COL_STORE = []
-style_path = 'Dumbledraw/Dumbledraw/style.yaml'
+labels_path = 'Dumbledraw/Dumbledraw/labels.yaml'
 
 
 def CreateTransparentColor(color, alpha):
@@ -17,10 +17,26 @@ def CreateTransparentColor(color, alpha):
     return new_idx
 
 
-label_dict = yaml.load(open(style_path))['legend_label']
-color_dict = {}
-for key, value in yaml.load(open(style_path))['color_dict'].items():
-    color_dict[key] = eval(value)
+label_dict = yaml.load(open(labels_path))['legend_label']
+color_dict = {
+    "ggH": R.TColor.GetColor("#BF2229"),
+    "qqH": R.TColor.GetColor("#00A88F"),
+    "ZTT": R.TColor.GetColor(248, 206, 104),
+    "ZLL": R.TColor.GetColor(100, 192, 232),
+    "ZL": R.TColor.GetColor(100, 192, 232),
+    "ZJ": R.TColor.GetColor("#64DE6A"),
+    "TT": R.TColor.GetColor(155, 152, 204),
+    "TTT": R.TColor.GetColor(155, 152, 204),
+    "TTJ": R.TColor.GetColor(215, 130, 204),
+    "W": R.TColor.GetColor(222, 90, 106),
+    "WT": R.TColor.GetColor(222, 90, 106),
+    "WL": R.TColor.GetColor(222, 150, 80),
+    "VV": R.TColor.GetColor("#6F2D35"),
+    "QCD": R.TColor.GetColor(250, 202, 255),
+    "EWK": R.TColor.GetColor("#E1F5A9"),
+    "EWKZ": R.TColor.GetColor("#E1F5A9"),
+    "unc": CreateTransparentColor(12, 0.4)
+}
 
 
 def SetStyle(name, **kwargs):
