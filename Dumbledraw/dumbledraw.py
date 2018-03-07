@@ -93,7 +93,7 @@ class Plot(object):
 
     def add_legend(self,
                    reference_subplot=0,
-                   width=0.50,
+                   width=0.30,
                    height=0.20,
                    pos=3,
                    offset=0.03):
