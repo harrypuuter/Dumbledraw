@@ -9,8 +9,8 @@ x_label:
     jphi_2: Trailing Jet #phi
     njets: Number of Jets
     nbtag: Number of b-tagged Jets
-    mt_1: Transverse Mass m_{T} (#mu, #slash{E}_{T}) / GeV
-    mt_2: Transverse Mass m_{T} (#tau, #slash{E}_{T}) / GeV
+    mt_1: Transverse Mass m_{T}(#mu, #slash{E}_{T}) / GeV
+    mt_2: Transverse Mass m_{T}(#tau, #slash{E}_{T}) / GeV
     ptvis: Visible p_{T} / GeV
     pt_tt: p_{T}(#tau#tau) / GeV
     mjj: Di-jet Mass m_{jj} / GeV
@@ -26,8 +26,8 @@ x_label:
     jphi_2: Trailing Jet #phi
     njets: Number of Jets
     nbtag: Number of b-tagged Jets
-    mt_1: Transverse Mass m_{T} (#mu, #slash{E}_{T}) / GeV
-    mt_2: Transverse Mass m_{T} (#tau, #slash{E}_{T}) / GeV
+    mt_1: Transverse Mass m_{T}(#mu, #slash{E}_{T}) / GeV
+    mt_2: Transverse Mass m_{T}(#tau, #slash{E}_{T}) / GeV
     ptvis: Visible p_{T} / GeV
     pt_tt: p_{T}(#tau#tau) / GeV
     mjj: Di-jet Mass m_{jj} / GeV
