@@ -206,6 +206,7 @@ class Subplot(object):
         self._ytitleoffsetscale = 1.0
         self._xlabeloffsetscale = 1.0
         self._ylabeloffsetscale = 1.0
+        self._setGridY = False
         self._height = 1 - upper_margin - lower_margin
 
     @property
@@ -297,6 +298,9 @@ class Subplot(object):
 
     def setXlims(self, low, high):
         self._xlims = [low, high]
+    
+    def setGridY(self):
+        self._setGridY = True
 
     def setYlims(self, low, high):
         self._ylims = [low, high]
@@ -374,7 +378,8 @@ class Subplot(object):
         if self._ytitlesize != None:
             hist.GetYaxis().SetTitleSize(
                 self._ytitlesize * hist.GetYaxis().GetTitleSize())
-
+        if self._setGridY:
+            self._pad.SetGridy()
         # set log scale and fix customized range if necessary
         if self._logx:
             self._pad.SetLogx()
